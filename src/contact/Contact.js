@@ -32,9 +32,9 @@ const investAmount = (invest) => {
             })
 
 };
-
+var data1;
 class Contact extends Component {
-rd(data){
+rd(data1){
   fusioncharts.ready(function () {
     var revenueChart = new fusioncharts({
         type: 'doughnut2d',
@@ -59,8 +59,8 @@ rd(data){
                 "showLegend": "1",
                 "legendShadow": "0",
                 "legendBorderAlpha": "0",
-                "defaultCenterLabel": "Total Assets: $100000.08K",
-                "centerLabel": "Asset Allocation $label: $value",
+                "defaultCenterLabel": "Total Assets: "+data1.total,
+                "centerLabel": "$label: $value",
                 "centerLabelBold": "1",
                 "showTooltip": "0",
                 "decimals": "0",
@@ -68,15 +68,16 @@ rd(data){
                 "subcaptionFontSize": "14",
                 "subcaptionFontBold": "0"
             },
-            "data":data
+            "data":data1.data
         }
     }).render();
 });
 }
+
 investAmount(invest){
   
    fetch(
-            "http://localhost:8080/",
+            "http://localhost:8090/black/createProfile",
             {
                 method: 'post',
                 headers: {
@@ -96,6 +97,8 @@ investAmount(invest){
             .then(data => {
               console.log(data);
              this.rd(data);
+             data1 = data;
+             //this.props.callbackFromParent(data[0].clientId);
                 return data
             })
             .catch(errors => {
@@ -133,7 +136,8 @@ investAmount(invest){
         amount:this.state.amount,
         time:this.state.time,
         risk:this.state.risk,
-        income:this.state.income
+        income:this.state.income,
+        userId : this.props.clientId
       };
       console.log(invest)
      this.investAmount(invest)
@@ -142,9 +146,10 @@ investAmount(invest){
     }
 
   render() {
+
     return (
       <div>
-  <form id="contact-form">
+
  <p><h2><b>THE BETTER WE KNOW YOU, THE MORE WE CAN DO.</b></h2></p>
   <h3><p>I am &nbsp; &nbsp;
       <b><input type="text"  value={this.state.age}  name="age" id="age"  onChange={this.handleInputChange} placeholder="(age)" required/></b> years old  having </p>
@@ -175,7 +180,6 @@ investAmount(invest){
       Submit
     </button>
   </p>
-</form>
 
 </div>
     );

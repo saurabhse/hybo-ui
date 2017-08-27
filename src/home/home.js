@@ -11,53 +11,7 @@ class Home extends Component {
             
 
 
-            <nav className="navbar navbar-default bootsnav navbar-fixed">
-               
-                
-                <div className="top-search">
-                    <div className="container">
-                        <div className="input-group">
-                            <span className="input-group-addon"><i className="fa fa-search"></i></span>
-                            <input type="text" className="form-control" placeholder="Search"/>
-                            <span className="input-group-addon close-search"><i className="fa fa-times"></i></span>
-                        </div>
-                    </div>
-                </div>
-                
-
-
-                <div className="container"> 
-                    <div className="attr-nav">
-                        <ul>
-                            <li className="search"><a href="#"><i className="fa fa-search"></i></a></li>
-                        </ul>
-                    </div> 
-
-                    
-                    <div className="navbar-header">
-                        
-                       <h2>
-                        <img src="assets/images/logo1.png" className="logo" alt=""/>
-                          
-                        <label className="logo" style={{color:'#00a885', verticalAlign: 'sub'}}>HYBO</label>
-                          </h2>
-                      
-
-                    </div>
-                    
-                    <div className="collapse navbar-collapse" id="navbar-menu">
-                        <ul className="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>                    
-                            <li><a href="#features">About</a></li>
-                            <li><a href="#business">Service</a></li>
-                            <li><a href="#action">Philosophy</a></li>
-                            <li><a href="#test">Invest Now</a></li>
-                            <li><a href="#test">Login</a></li>
-                        </ul>
-                    </div>
-                </div> 
-
-            </nav>
+           
 
             
 
@@ -72,7 +26,7 @@ class Home extends Component {
                                         <div className="home_text ">
                                             <h2 className="text-white">Welcome to <strong>HYBO</strong></h2>
                                             <h1 className="text-white">We Do Business All Of Time</h1>
-                                            <h3 className="text-white">- We Create a <strong>Concept</strong> into The Market -</h3>
+                                            <h3 className="text-white">- We Create <strong>Asset Allocation</strong> for you -</h3>
                                         </div>
 
                                         <div className="home_btns m-top-40">
@@ -84,7 +38,7 @@ class Home extends Component {
                                         <div className="home_text ">
                                             <h2 className="text-white">Welcome to <strong>HYBO</strong></h2>
                                             <h1 className="text-white">We Do Business All Of Time</h1>
-                                            <h3 className="text-white">- We Create a <strong>Concept</strong> into The Market -</h3>
+                                            <h3 className="text-white">- We do <strong>Portfolio Rebalancing</strong> -</h3>
                                         </div>
 
                                         <div className="home_btns m-top-40">
@@ -96,7 +50,7 @@ class Home extends Component {
                                         <div className="home_text ">
                                             <h2 className="text-white">Welcome to <strong>HYBO</strong></h2>
                                             <h1 className="text-white">We Do Business All Of Time</h1>
-                                            <h3 className="text-white">- We Create a <strong>Concept</strong> into The Market -</h3>
+                                            <h3 className="text-white">- We do <strong>Tax Loss Harvesting</strong> for you -</h3>
                                         </div>
 
                                         <div className="home_btns m-top-40">

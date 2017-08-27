@@ -9,7 +9,9 @@
     "fusioncharts": "^3.12.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-fusioncharts": "^1.0.4"
+    "react-fusioncharts": "^1.0.4",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
