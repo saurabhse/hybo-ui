@@ -1,3 +1,12 @@
+This is the UI app for Hybo . This is one of microservice among others in Hybo project.
+Check Hypo project for more details.
+
+https://github.com/saurabhse/hybo
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
